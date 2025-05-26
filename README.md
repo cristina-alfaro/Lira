@@ -82,7 +82,8 @@ En tu celular, aparecerá una dirección IP + código QR o código de emparejami
 En Android Studio, introduce esos datos para emparejar.
 
 4. Instalar y abrir la app
-Abre el proyecto de Lira o una ventana de terminal (si solo tienes la APK).
+
+Abre el proyecto de Lira o una ventana.
 
 ✅ ¡Listo!
 La aplicación Lira se abrirá en tu celular sin necesidad de un cable USB.
