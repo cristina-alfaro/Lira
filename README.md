@@ -42,24 +42,51 @@ Esta funcionalidad está orientada a usuarios oyentes que desean comunicar frase
 
 ---
 
-## 📥 Instrucciones para Descargar la APK en tu Dispositivo Android
+## 📥 Instrucciones para abrir la APK en tu Dispositivo Android
 
-Sigue estos pasos para instalar la demo de Lira en tu celular Android:
+🧰 Requisitos previos
+Tener Android Studio instalado en tu PC.
 
-1. **Descarga la APK:**
-   Accede al enlace proporcionado (Google Drive, GitHub Releases, o similar).
-   Ejemplo:
-   [Descargar Lira APK](https://tu-enlace-de-apk.com)
+Tener habilitado el Modo Desarrollador en tu celular.
 
-2. **Activa permisos para instalar APKs externas:**
-   Ve a tu celular → **Configuración > Seguridad > Permitir orígenes desconocidos**.
-   (Este paso puede variar según el modelo de tu dispositivo.)
+Estar conectado a la misma red Wi-Fi tanto en el celular como en la computadora.
 
-3. **Instala la APK:**
-   Una vez descargado el archivo `.apk`, ábrelo y sigue las instrucciones para instalar la aplicación.
+Android 11 o superior (recomendado para soporte completo de wireless debugging).
 
-4. **Abre la app:**
-   Encuentra "Lira" en tu menú de aplicaciones y accede con las credenciales de prueba.
+🔧 Paso a paso
+1. Activar opciones de desarrollador
+En tu celular, ve a:
+Ajustes > Acerca del teléfono > Número de compilación
+
+Toca varias veces hasta que diga:
+"Ahora eres un desarrollador"
+
+2. Activar Depuración por Wi-Fi
+Ve a:
+Ajustes > Sistema > Opciones de desarrollador
+
+Activa:
+
+Depuración USB
+
+Depuración inalámbrica (Wireless Debugging)
+
+3. Conectar tu celular desde Android Studio
+Abre Android Studio y ve a:
+View > Tool Windows > Device Manager
+
+En la parte superior, haz clic en "Pair using Wi-Fi" o "Pair device using pairing code".
+
+En tu celular, aparecerá una dirección IP + código QR o código de emparejamiento.
+
+En Android Studio, introduce esos datos para emparejar.
+
+4. Instalar y abrir la app
+Abre el proyecto de Lira o una ventana de terminal (si solo tienes la APK).
+
+✅ ¡Listo!
+La aplicación Lira se abrirá en tu celular sin necesidad de un cable USB.
+Es una opción ideal para hacer pruebas en tiempo real mientras desarrollas o haces demostraciones.
 
 > ⚠️ *Esta es una versión demo con funciones limitadas. No se encuentra disponible en Google Play Store.*
 
