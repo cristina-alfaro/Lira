@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".firstApp.MenuActivity"
+    android:background="#fbf0ff">
+
+    <ImageView
+        android:id="@+id/profilePic"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:src="@drawable/person_modified"
+
+        android:scaleType="centerCrop"
+        />
+    <TextView
+        android:id="@+id/userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/profilePic"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="59dp"
+        android:text="LiraUser"
+        android:textSize="25dp"
+        android:textColor="#000000"/>
+
+    <View
+        android:id="@+id/cajaSaludo"
+        android:layout_width="350dp"
+        android:layout_height="150dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/userName"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/rounded_background"/>
+
+    <TextView
+        android:id="@+id/saludo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bienvenido, LiraUser"
+        app:layout_constraintTop_toTopOf="@id/cajaSaludo"
+        app:layout_constraintBottom_toBottomOf="@id/cajaSaludo"
+        app:layout_constraintStart_toStartOf="@id/cajaSaludo"
+        android:layout_marginStart="15dp"
+        android:textSize="25dp"
+        android:textColor="#000000"/>
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        app:layout_constraintTop_toTopOf="@id/cajaSaludo"
+        app:layout_constraintBottom_toBottomOf="@id/cajaSaludo"
+        app:layout_constraintStart_toEndOf="@id/saludo"
+        android:layout_marginStart="20dp"
+        android:src="@drawable/saludo"/>
+
+    <View
+        android:id="@+id/cajaBtnLenguaje"
+        android:layout_width="175dp"
+        android:layout_height="200dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cajaSaludo"
+        app:layout_constraintEnd_toStartOf="@id/cajaBtnChat"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/rounded_background"/>
+
+    <View
+        android:id="@+id/cajaBtnChat"
+        android:layout_width="175dp"
+        android:layout_height="200dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/cajaBtnLenguaje"
+        app:layout_constraintTop_toBottomOf="@id/cajaSaludo"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/rounded_background"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnLenguaje"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/icons8_lenguaje"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:contentDescription="Lesa a Español"
+        app:layout_constraintTop_toTopOf="@id/cajaBtnLenguaje"
+        app:layout_constraintStart_toStartOf="@id/cajaBtnLenguaje"
+        app:layout_constraintEnd_toEndOf="@id/cajaBtnLenguaje"
+        android:layout_marginTop="15dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/btnLenguaje"
+        app:layout_constraintStart_toStartOf="@id/cajaBtnLenguaje"
+        app:layout_constraintEnd_toEndOf="@id/cajaBtnLenguaje"
+        android:layout_marginTop="10dp"
+        android:text="Traductor no \n Oyentes"
+        android:textColor="#000000"
+        android:textSize="25dp"        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnChat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/icons8_mensaje"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:contentDescription="Español a Lesa"
+        app:layout_constraintTop_toTopOf="@id/cajaBtnChat"
+        app:layout_constraintStart_toStartOf="@id/cajaBtnChat"
+        app:layout_constraintEnd_toEndOf="@id/cajaBtnChat"
+        android:layout_marginTop="15dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/btnChat"
+        app:layout_constraintStart_toStartOf="@id/btnChat"
+        app:layout_constraintEnd_toEndOf="@id/btnChat"
+        android:layout_marginTop="10dp"
+        android:text="Traductor \n Oyentes"
+        android:textColor="#000000"
+        android:textSize="25dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
