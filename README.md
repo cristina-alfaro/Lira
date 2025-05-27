@@ -37,7 +37,7 @@ En la **versión APK para Android**, al ingresar a esta pantalla:
 
 Esta funcionalidad está orientada a usuarios oyentes que desean comunicar frases a través de señas.
 
-* Utiliza **GIFs animados** de un avatar 3D para mostrar palabras o frases comunes como **"Buenas tardes"**.
+* Utiliza **GIFs animados** de un avatar 3D para mostrar palabras o frases comunes como **"buenas tardes"**.
 * Si la palabra introducida **no está disponible**, se mostrará una imagen por defecto (ej. un paisaje) indicando que aún no se ha implementado la seña correspondiente.
 
 ---
@@ -81,9 +81,9 @@ En tu celular, aparecerá una dirección IP + código QR o código de emparejami
 
 En Android Studio, introduce esos datos para emparejar.
 
-4. Instalar y abrir la app
+4. Abrir la app
 
-Abre el proyecto de Lira o una ventana.
+Abre el proyecto de Lira en Android Studio y selecciona en dispositivos el nombre de tu dispositivo y presiona el botón de Play/Debug para que la aplicación se ejecute en tu dispositivo móvil. 
 
 ✅ ¡Listo!
 La aplicación Lira se abrirá en tu celular sin necesidad de un cable USB.
